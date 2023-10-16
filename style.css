@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Croissant+One&family=Inclusive+Sans&family=Inter&family=Lobster&family=Mooli&family=Open+Sans:ital@0;1&family=Poppins&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(68, 92, 227);
+
+    display: flex;
+   
+}
+
+.left-child{
+    width: 40%;
+    height: 100vh;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.right-child{
+    width: 60%;
+    height: 100vh;
+  background-image: url(./login-bg.jpg);
+  background-size: cover;
+  background-position: right;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right-child h1{
+    font-size: 50px;
+    color: white;
+}
+.right-child button{
+    width: 250px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+form label{
+    font-size: 22px;
+    color: white;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+form input{
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+form button{
+    width: 300px;
+    height: 40px;
+    background-color: rgb(25, 84, 123);
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+}
+form a{
+    color: rgb(25, 84, 123);
+    font-size: 18px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: 700;
+}
+form hr{
+    width: 300px;
+    height: 1px;
+    margin-top: 20px;
+}  
+
+#btn{
+    background-color: rgb(60, 58, 58);
+    color: white;
+    font-size: 18px;
+}
+form p{
+    margin-top: 20px;
+    color: white;
+    font-size: 14px;
+}
+#psd{
+    margin-right: 200px;
+}
+
+form span{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+form span hr{
+    width: 1px;
+    height: 15px;
+}
+form span a{
+    color: rgb(25, 84, 123);
+    font-size: 14px;
+}
+
+form span a:hover{
+    color: rgb(25, 84, 123);
+}
+
+form a:hover{
+    border-bottom: 1px solid rgb(25, 84, 123);
+}
+
+/* Responcive Divices */
+@media  (max-width: 768px){
+    .main-container{
+    width:100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.left-child{
+    width: 100%;
+    height: auto;
+    padding-block: 20px;
+}
+.right-child{
+width: 100%;
+height: 100vh;
+}
+.right-child h1{
+font-size: 40px;
+}
+
+
+}
+    
